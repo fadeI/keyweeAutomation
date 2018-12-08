@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d60375b-cbbe-4528-978e-887f6478a7ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/blocks/BaseBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blocks/BaseBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blocks/ShortenServiceBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blocks/ShortenServiceBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infra/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infra/WebUtils/WebElementUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/WebUtils/WebElementUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/infra/WebUtils/WebTextUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/WebUtils/WebTextUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ShortenServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ShortenServicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shortenLnkStanityFlow/SnatiyTestGroupsShortenTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shortenLnkStanityFlow/SnatiyTestGroupsShortenTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="5d60375b-cbbe-4528-978e-887f6478a7ef" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/infra/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+            <state relative-caret-position="459">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#587#588#0" expanded="true" />
@@ -367,7 +359,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544285018628" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544290592469" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -459,9 +451,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SnatiyTestGroupsShortenTests - 2018.12.08 at 01h 52m 14s.xml">
-      <configuration name="SnatiyTestGroupsShortenTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="SnatiyTestGroupsShortenTests - 2018.12.08 at 01h 53m 03s.xml">
       <configuration name="SnatiyTestGroupsShortenTests" configurationId="TestNG" />
     </history-entry>
@@ -489,12 +478,15 @@
     <history-entry file="SnatiyTestGroupsShortenTests - 2018.12.08 at 19h 26m 31s.xml">
       <configuration name="SnatiyTestGroupsShortenTests" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="SnatiyTestGroupsShortenTests - 2018.12.08 at 19h 27m 47s.xml">
+      <configuration name="SnatiyTestGroupsShortenTests" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -503,7 +495,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -734,8 +726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/infra/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#587#588#0" expanded="true" />
