@@ -18,7 +18,6 @@ public class SnatiyTestGroupsShortenTests extends BaseTest {
         BaseBlocks.switchToNewTab();
         BaseBlocks.validateUrlsEquality(inputUrl,true);
 
-
     }
 
 

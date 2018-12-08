@@ -11,6 +11,7 @@ public class BaseBlocks {
 
     public static void switchToNewTab() {
         System.out.println("Enter >> switchToNewTab ");
+
         DriverManger.switchToLastTab();
     }
 

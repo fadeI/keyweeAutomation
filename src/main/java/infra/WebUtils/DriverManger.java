@@ -51,7 +51,6 @@ public class DriverManger {
         driver.switchTo().window(tabs.get(0));
     }
 
-
     public static void closeallTabs() {
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         for (int i = 0; i < tabs.size(); i++) {
