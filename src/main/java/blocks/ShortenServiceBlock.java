@@ -10,13 +10,14 @@ public class ShortenServiceBlock extends BaseBlocks {
         shortenServicePage = new ShortenServicePage();
     }
 
-    public static void fillTextFiledAndValidateCopyvisibility(String url, boolean expected) throws InterruptedException {
+    public static void fillTextFiledAndValidateCopyvisibility(String url, boolean expected)  {
         System.out.println("Enter >> fillTextFiledAndValidateCopyVisibility ");
         shortenServicePage.typeShortenLnk(url);
         shortenServicePage.clickOnShortenUrlButton();
-
-        if (expected)
+        if (expected) {
+            shortenServicePage.isXuttonAppears();
             Assert.assertTrue(shortenServicePage.isCopyButtonVisible(), "CopyButton is visible as expected ");
+        }
         else {
             Assert.assertFalse(shortenServicePage.isCopyButtonVisible(), "CopyButton is  mot visible as expected ");
         }

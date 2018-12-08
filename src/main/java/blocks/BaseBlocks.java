@@ -30,10 +30,8 @@ public class BaseBlocks {
         DriverManger.getCurrentDriver().get(shortenLnk);
     }
 
-    public static void NavigateToNewUrlAndValidateResults(String shortenLnk, String expectedString, boolean expected ) throws InterruptedException {
+    public static void NavigateToNewUrlAndValidateResults(String shortenLnk, String expectedString, boolean expected ) {
         DriverManger.getCurrentDriver().get(shortenLnk);
-        Thread.sleep(5000);
-
         if (expected) {
             Assert.assertTrue(DriverManger.getCurrentDriver().getCurrentUrl().equals(expectedString), "Both Url are the same");
         } else {

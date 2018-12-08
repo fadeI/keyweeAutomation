@@ -1,12 +1,11 @@
 package pages;
 
-import infra.BasePage;
 import infra.WebUtils.WebButtonUtils;
 import infra.WebUtils.WebElementUtils;
 import infra.WebUtils.WebTextUtils;
 import org.openqa.selenium.By;
 
-public class ShortenServicePage extends BasePage {
+public class ShortenServicePage {
 
     String shortenTextID = "shorten_url";
     String shortenButtonId = "shorten_btn";
@@ -31,27 +30,18 @@ public class ShortenServicePage extends BasePage {
     }
 
     public String getShortenLnk() {
-        System.out.println("Enter >> clickOnShortenUrlButton");
+        System.out.println("Enter >> getShortenLnk");
+        WebElementUtils.waitUntilElementVisibility(By.xpath(mostRecentUrlXpath));
         return WebTextUtils.getText(By.xpath(mostRecentUrlXpath));
     }
-
-    public void clickOnCopyButton() {
-        WebButtonUtils.clickOnElement(By.id(copyButtonID));
-    }
-
-    public void clearActiveShortenLnk() {
-        WebButtonUtils.clickOnElement(By.id(clearActiveShortenLnk));
-    }
-
 
     public boolean isCopyButtonVisible() {
         return WebElementUtils.isElementVisible(By.id(copyButtonID));
     }
 
-    public void opennNewTabByClickingOnElementInpage() {
-
-        WebElementUtils.openNewTabByElement(By.xpath(mostRecentUrlXpath));
+    public void isXuttonAppears() {
+        System.out.println("Enter >> isXuttonAppears");
+        WebElementUtils.waitUntilElementVisibility(By.id(clearActiveShortenLnk));
     }
-
 }
 
