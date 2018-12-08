@@ -27,7 +27,11 @@ public class DriverManger {
         if (browsersType.getBrowserType().equals(BrowsersType.CHROME.getBrowserType())) {
             System.setProperty("webdriver.chrome.driver", workingDir + browsersType.getDriverPath());
             ChromeOptions options = new ChromeOptions();
-            options.addArguments("--start-maximized");
+            if (System.getProperty("os.name").equalsIgnoreCase("Linux")) {
+                options.addArguments("headless");
+            }else {
+                options.addArguments("--start-maximized");
+            }
             driver = new ChromeDriver(options);
 
         }
