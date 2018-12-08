@@ -11,10 +11,10 @@ public class ShortenServiceBlock extends BaseBlocks {
     }
 
     public static void fillTextFiledAndValidateCopyvisibility(String url, boolean expected) throws InterruptedException {
-
+        System.out.println("Enter >> fillTextFiledAndValidateCopyVisibility ");
         shortenServicePage.typeShortenLnk(url);
         shortenServicePage.clickOnShortenUrlButton();
-        Thread.sleep(5000);
+
         if (expected)
             Assert.assertTrue(shortenServicePage.isCopyButtonVisible(), "CopyButton is visible as expected ");
         else {
@@ -23,16 +23,9 @@ public class ShortenServiceBlock extends BaseBlocks {
     }
 
 
-    public static void clickOnMostRecentUrl() {
-        shortenServicePage.clickOnMostRecentUrl();
-
-    }
-
     public static String getShortenLnk() {
         return  shortenServicePage.getShortenLnk();
     }
 
-    public static void openShortenlnkWithNewTab() {
-        shortenServicePage.opennNewTabByClickingOnElementInpage();
-    }
+
 }

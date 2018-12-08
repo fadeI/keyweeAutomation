@@ -9,7 +9,6 @@ import org.testng.annotations.BeforeClass;
 public class BaseTest {
     // TODO may read this form external resource
     String url ="https://bitly.com/";
-    //blocks
 
 
     @BeforeClass
@@ -23,6 +22,7 @@ public class BaseTest {
 
     @AfterClass
     public void quitDriver(){
+        System.out.println("Enter >> quitDriver");
         DriverManger.getCurrentDriver().quit();
     }
 
