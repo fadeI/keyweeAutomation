@@ -6,16 +6,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
-
-
-
     // TODO may read this form external resource
     String url ="https://bitly.com/";
-
-
     //blocks
-
-
 
 
     @BeforeClass
