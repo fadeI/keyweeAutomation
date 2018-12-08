@@ -4,7 +4,6 @@ import blocks.BaseBlocks;
 import blocks.ShortenServiceBlock;
 import infra.BaseTest;
 import org.testng.annotations.Test;
-import pages.ShortenServicePage;
 
 public class SnatiyTestGroupsShortenTests extends BaseTest {
 
