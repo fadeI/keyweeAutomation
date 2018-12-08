@@ -4,6 +4,7 @@ import blocks.BaseBlocks;
 import blocks.ShortenServiceBlock;
 import infra.BaseTest;
 import org.testng.annotations.Test;
+import pages.ShortenServicePage;
 
 public class SnatiyTestGroupsShortenTests extends BaseTest {
 
@@ -13,9 +14,10 @@ public class SnatiyTestGroupsShortenTests extends BaseTest {
     public void SimpleShortenTest() throws InterruptedException {
         //Get page title
         ShortenServiceBlock.fillTextFiledAndValidateCopyvisibility(inputUrl,true);
-        ShortenServiceBlock.clickOnMostRecentUrl();
-        BaseBlocks.switchToNewTab();
-        BaseBlocks.validateUrlsEquality(inputUrl,true);
+        String shortenLnk = ShortenServiceBlock.getShortenLnk();
+        System.out.println("NANA  ---------------------"+ shortenLnk);
+        BaseBlocks.NavigateToNewUrlAndValidateResults(shortenLnk, inputUrl,true);
+
 
     }
 

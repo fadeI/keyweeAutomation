@@ -10,33 +10,36 @@ public class ShortenServicePage extends BasePage {
 
     String shortenTextID = "shorten_url";
     String shortenButtonId = "shorten_btn";
-    String copyButtonID ="copy_shortlink";
+    String copyButtonID = "copy_shortlink";
     String clearActiveShortenLnk = "clear_active_shorten";
     String mostRecentUrlXpath = "//ul[@id='most_recent_link']//a[@class = 'short-url']";
 
 
-
-
-    public  void clickOnMostRecentUrl() {
-        System.out.println("Enter >> clickOnMostRecentUrl " );
+    public void clickOnMostRecentUrl() {
+        System.out.println("Enter >> clickOnMostRecentUrl ");
         WebButtonUtils.clickOnElement(By.xpath(mostRecentUrlXpath));
     }
 
-    public void typeShortenLnk(String shortenLink){
+    public void typeShortenLnk(String shortenLink) {
         System.out.println("Enter >> typeShortenLnk type url" + shortenLink);
-        WebTextUtils.typeText(By.id(shortenTextID),shortenLink);
+        WebTextUtils.typeText(By.id(shortenTextID), shortenLink);
     }
 
-    public void clickOnShortenUrlButton(){
+    public void clickOnShortenUrlButton() {
         System.out.println("Enter >> clickOnShortenUrlButton");
         WebButtonUtils.clickOnElement(By.id(shortenButtonId));
     }
 
-    public void clickOnCopyButton(){
+    public String getShortenLnk() {
+        System.out.println("Enter >> clickOnShortenUrlButton");
+        return WebTextUtils.getText(By.xpath(mostRecentUrlXpath));
+    }
+
+    public void clickOnCopyButton() {
         WebButtonUtils.clickOnElement(By.id(copyButtonID));
     }
 
-    public void clearActiveShortenLnk(){
+    public void clearActiveShortenLnk() {
         WebButtonUtils.clickOnElement(By.id(clearActiveShortenLnk));
     }
 
@@ -44,5 +47,11 @@ public class ShortenServicePage extends BasePage {
     public boolean isCopyButtonVisible() {
         return WebElementUtils.isElementVisible(By.id(copyButtonID));
     }
+
+    public void opennNewTabByClickingOnElementInpage() {
+
+        WebElementUtils.openNewTabByElement(By.xpath(mostRecentUrlXpath));
+    }
+
 }
 

@@ -3,6 +3,7 @@ package infra;
 import blocks.ShortenServiceBlock;
 import infra.WebUtils.DriverManger;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
@@ -18,4 +19,11 @@ public class BaseTest {
         ShortenServiceBlock.initHomePage();
 
     }
+
+
+    @AfterClass
+    public void quitDriver(){
+        DriverManger.getCurrentDriver().quit();
+    }
+
 }

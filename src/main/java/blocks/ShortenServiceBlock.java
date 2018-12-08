@@ -27,4 +27,12 @@ public class ShortenServiceBlock extends BaseBlocks {
         shortenServicePage.clickOnMostRecentUrl();
 
     }
+
+    public static String getShortenLnk() {
+        return  shortenServicePage.getShortenLnk();
+    }
+
+    public static void openShortenlnkWithNewTab() {
+        shortenServicePage.opennNewTabByClickingOnElementInpage();
+    }
 }
