@@ -19,14 +19,11 @@ cd ../..
 sudo apt-get update
 
 
-
+sudo apt install ecj
 sudo apt install default-jre
-sudo apt install default-jdk 
-sudo apt install openjdk-11-jdk-headless
-sudo apt install ecj                    
-sudo apt install openjdk-8-jdk-headless 
+sudo apt install default-jdk
 sudo apt install openjdk-11-jre-headless
-sudo apt install openjdk-8-jre-headless
+
 sudo apt-get install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome*.deb
