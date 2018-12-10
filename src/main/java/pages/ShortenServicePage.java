@@ -36,6 +36,7 @@ public class ShortenServicePage {
     }
 
     public boolean isCopyButtonVisible() {
+        System.out.println("Enter >> isCopyButtonVisible");
         return WebElementUtils.isElementVisible(By.id(copyButtonID));
     }
 

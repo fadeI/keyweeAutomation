@@ -2,6 +2,7 @@ package infra.WebUtils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,7 +14,7 @@ public class WebElementUtils {
         try{
 
             WebElement element =DriverManger.getCurrentDriver().findElement(by);
-            return element.isDisplayed();
+            return  element.isDisplayed();
         }
         catch (Exception e) {
             return false;
@@ -31,10 +32,10 @@ public class WebElementUtils {
         }
     }
     public static  void waitUntilElementVisibility(By by) {
+        System.out.println("Enter >> waitUntilElementVisibility");
+            WebDriverWait wait = new WebDriverWait(DriverManger.getCurrentDriver(), 10);
+            WebElement aboutMe = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 
-        WebDriverWait wait = new WebDriverWait(DriverManger.getCurrentDriver(), 20);
-        WebElement aboutMe;
-        aboutMe = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
 }

@@ -31,6 +31,7 @@ public class BaseBlocks {
     }
 
     public static void NavigateToNewUrlAndValidateResults(String shortenLnk, String expectedString, boolean expected ) {
+        System.out.println("Enter  >> NavigateToNewUrlAndValidateResults ");
         DriverManger.getCurrentDriver().get(shortenLnk);
         if (expected) {
             Assert.assertTrue(DriverManger.getCurrentDriver().getCurrentUrl().equals(expectedString), "Both Url are the same");

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 public class WebTextUtils {
 
     public static void typeText(By by, String value){
+        System.out.println("Enter >> typeText, value  =  "+ value);
         try {
             WebElement element = DriverManger.getCurrentDriver().findElement(by);
             element.clear();
@@ -18,6 +19,7 @@ public class WebTextUtils {
     }
 
     public static String getText(By by) {
+        System.out.println("Enter >> getText");
         try {
             WebElement element = DriverManger.getCurrentDriver().findElement(by);
             return  element.getText();

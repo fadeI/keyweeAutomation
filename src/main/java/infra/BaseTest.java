@@ -13,17 +13,19 @@ public class BaseTest {
 
     @BeforeClass
     public  void initWebDriver(){
+        System.out.println("**************************Start--BeforeClass**********************");
         DriverManger.initWebDriver();
         DriverManger.getCurrentDriver().get(url);
         ShortenServiceBlock.initHomePage();
-
+        System.out.println("**************************End--BeforeClass************************");
     }
 
 
     @AfterClass
     public void quitDriver(){
-        System.out.println("Enter >> quitDriver");
+        System.out.println("**************************Start--AfterClass**********************");
         DriverManger.getCurrentDriver().quit();
+        System.out.println("**************************End--AfterClass************************");
     }
 
 }
